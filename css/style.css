@@ -1,0 +1,506 @@
+* {
+  margin: 0;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: #151515;
+}
+body h1 {
+  font-size: 3rem;
+}
+body h2 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+body section {
+  padding: 100px 0px;
+}
+body .btn {
+  border: none;
+  background-color: #C73659;
+  color: #151515;
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 1px solid #C73659;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+}
+body .btn:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  color: #C73659;
+  background-color: #151515;
+}
+body .text-lightmode {
+  color: #151515 !important;
+}
+body .bg-lightmode {
+  background-color: #EEEEEE !important;
+}
+body .bg-lightmode h3,
+body .bg-lightmode p {
+  color: #151515 !important;
+}
+body .bg-lightmode a {
+  color: #151515 !important;
+}
+body .bg-lightmode a:hover {
+  color: #C73659 !important;
+}
+body .box-lightmode {
+  background-color: #EEEEEE !important;
+}
+body .box-lightmode:hover {
+  background-color: #C73659 !important;
+}
+body .btn-lightmode {
+  background-color: #151515 !important;
+  border: 1px solid #151515 !important;
+  color: #EEEEEE !important;
+}
+body .btn-lightmode:hover {
+  background-color: #EEEEEE !important;
+  color: #151515 !important;
+}
+
+main .top-page {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+main .top-page a {
+  text-decoration: none;
+}
+main header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: #A91D3A;
+  padding: 20px 30px 20px 30px;
+}
+main header img {
+  height: 20px;
+}
+main header i {
+  color: #EEEEEE;
+}
+main header i:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  color: #C73659;
+}
+main header #checkbox {
+  display: none;
+}
+main header .toggle-mode {
+  width: 60px;
+  height: fit-content;
+  background-color: #151515;
+  border-radius: 64px;
+}
+main header .toggle-mode #circle {
+  width: 20px;
+  height: 20px;
+  background-color: #C73659;
+  border-radius: 100%;
+  border: 5px solid #151515;
+  transition: 0.4s;
+  cursor: pointer;
+}
+main header #checkbox:checked + .toggle-mode #circle {
+  transform: translateX(2rem);
+  background-color: #A91D3A;
+}
+main nav {
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #C73659;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0px 32px;
+  z-index: 1;
+}
+main nav #close-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+main nav #close-menu:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  opacity: 0.5;
+}
+main nav #close-menu small {
+  margin: 0px 6px;
+}
+main nav ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main nav ul a {
+  padding: 6px 0px;
+  font-size: 1rem;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  color: #151515;
+}
+main nav ul a:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  opacity: 0.5;
+}
+main .intro {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+main .intro .text-intro {
+  animation: slideRight 0.8s ease-in forwards;
+  position: relative;
+}
+main .intro .text-intro h1 {
+  color: #EEEEEE;
+  font-weight: 500;
+  line-height: 1.2;
+}
+main .intro .text-intro h1 b {
+  color: #C73659;
+}
+main .intro .text-intro h4 {
+  font-weight: 300;
+  color: #EEEEEE;
+}
+main .intro .text-intro a {
+  border: none;
+  background-color: #C73659;
+  color: #151515;
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 1px solid #C73659;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+}
+main .intro .text-intro a:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  color: #C73659;
+  background-color: #151515;
+}
+@media only screen and (max-width: 800px) {
+  main .intro .text-intro a {
+    justify-self: center;
+  }
+}
+@media only screen and (max-width: 800px) {
+  main .intro .text-intro {
+    text-align: center;
+    margin-top: 12px;
+  }
+}
+main .intro .avatar {
+  height: 300px;
+  width: 300px;
+  background-image: url("../img/ricardo.jpg");
+  background-size: cover;
+  background-position: 0px -30px;
+  border-radius: 100%;
+  animation: expand 0.8s ease-in forwards;
+}
+@media only screen and (max-width: 800px) {
+  main .intro .avatar {
+    height: 200px;
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  main .intro {
+    flex-direction: column-reverse;
+  }
+}
+main .about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+main .about h2 {
+  color: #EEEEEE;
+}
+main .about p {
+  color: #EEEEEE;
+  font-weight: 300;
+  width: 50%;
+  margin-top: 12px;
+}
+@media only screen and (max-width: 800px) {
+  main .about p {
+    width: 90%;
+  }
+}
+main .portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .portfolio h2 {
+  color: #EEEEEE;
+}
+main .portfolio .gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  width: 90%;
+}
+main .portfolio .gallery .box-gallery {
+  width: 350px;
+  height: 200px;
+  background-color: #A91D3A;
+  background-size: cover;
+  background-position: center;
+  margin: 6px;
+  border-radius: 12px;
+}
+main .portfolio .gallery .box-gallery:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  transform: scale(1.3);
+}
+main .portfolio .github-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 12px;
+}
+main .portfolio .github-btn a {
+  border: none;
+  background-color: #C73659;
+  color: #151515;
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 1px solid #C73659;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+}
+main .portfolio .github-btn a:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  color: #C73659;
+  background-color: #151515;
+}
+main .portfolio .container-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+main .portfolio .container-modal #close-modal {
+  font-size: 2rem;
+  color: #EEEEEE;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+main .portfolio .container-modal #close-modal:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  color: #C73659;
+}
+main .portfolio .container-modal .modal {
+  background-color: #151515;
+  padding: 20px;
+  border-radius: 12px;
+  width: 50%;
+}
+main .portfolio .container-modal .modal img {
+  width: 100%;
+  border-radius: 12px;
+}
+main .portfolio .container-modal .modal h3 {
+  color: #EEEEEE;
+  margin-top: 12px;
+}
+main .portfolio .container-modal .modal p {
+  color: #EEEEEE;
+  margin-top: 12px;
+  font-weight: 300;
+}
+main .portfolio .container-modal .modal a {
+  border: none;
+  background-color: #C73659;
+  color: #151515;
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 1px solid #C73659;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+}
+main .portfolio .container-modal .modal a:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  color: #C73659;
+  background-color: #151515;
+}
+main .skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .skills h2 {
+  color: #EEEEEE;
+}
+main .skills .gallery-skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  width: 60%;
+}
+main .skills .gallery-skills .box-skill {
+  width: 120px;
+  height: 120px;
+  background-color: #A91D3A;
+  margin: 6px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+main .skills .gallery-skills .box-skill:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  transform: scale(1.3);
+  background-color: #C73659;
+}
+main .skills .gallery-skills .box-skill i {
+  font-size: 2.5rem;
+  color: #151515;
+}
+main .skills .gallery-skills .box-skill span {
+  margin-top: 3px;
+  color: #151515;
+}
+main .social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .social-media h2 {
+  color: #EEEEEE;
+}
+main .social-media .container-social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 12px;
+  border-radius: 60px;
+  background-color: #A91D3A;
+  margin-top: 12px;
+}
+main .social-media .container-social-media .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: #EEEEEE;
+  margin: 0px 25px;
+}
+main .social-media .container-social-media .links:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  color: #C73659;
+}
+main .social-media .container-social-media .links i {
+  font-size: 2rem;
+}
+@media only screen and (max-width: 800px) {
+  main .social-media .container-social-media .links {
+    margin: 25px 0px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  main .social-media .container-social-media {
+    flex-direction: column;
+  }
+}
+main .credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .credits small {
+  color: #EEEEEE;
+  text-align: center;
+}
+
+@keyframes expand {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes slideRight {
+  0% {
+    right: 200px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
