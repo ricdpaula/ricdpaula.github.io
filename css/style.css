@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #151515;
+  background-color: #040D12;
 }
 body h1 {
   font-size: 3rem;
@@ -18,14 +18,14 @@ body section {
 }
 body .btn {
   border: none;
-  background-color: #C73659;
-  color: #151515;
+  background-color: #5C8374;
+  color: #040D12;
   margin-top: 20px;
   padding: 12px;
   border-radius: 40px;
   font-weight: bold;
   font-size: 1rem;
-  border: 1px solid #C73659;
+  border: 1px solid #5C8374;
   text-decoration: none;
   display: block;
   width: fit-content;
@@ -33,39 +33,39 @@ body .btn {
 body .btn:hover {
   cursor: pointer;
   transition: 0.4s;
-  color: #C73659;
-  background-color: #151515;
+  color: #5C8374;
+  background-color: #040D12;
 }
 body .text-lightmode {
-  color: #151515 !important;
+  color: #040D12 !important;
 }
 body .bg-lightmode {
   background-color: #EEEEEE !important;
 }
 body .bg-lightmode h3,
 body .bg-lightmode p {
-  color: #151515 !important;
+  color: #040D12 !important;
 }
 body .bg-lightmode a {
-  color: #151515 !important;
+  color: #040D12 !important;
 }
 body .bg-lightmode a:hover {
-  color: #C73659 !important;
+  color: #5C8374 !important;
 }
 body .box-lightmode {
   background-color: #EEEEEE !important;
 }
 body .box-lightmode:hover {
-  background-color: #C73659 !important;
+  background-color: #5C8374 !important;
 }
 body .btn-lightmode {
-  background-color: #151515 !important;
-  border: 1px solid #151515 !important;
+  background-color: #040D12 !important;
+  border: 1px solid #040D12 !important;
   color: #EEEEEE !important;
 }
 body .btn-lightmode:hover {
   background-color: #EEEEEE !important;
-  color: #151515 !important;
+  color: #040D12 !important;
 }
 
 main .top-page {
@@ -81,7 +81,7 @@ main header {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  background-color: #A91D3A;
+  background-color: #183D3D;
   padding: 20px 30px 20px 30px;
 }
 main header img {
@@ -93,7 +93,7 @@ main header i {
 main header i:hover {
   cursor: pointer;
   transition: 0.4s;
-  color: #C73659;
+  color: #5C8374;
 }
 main header #checkbox {
   display: none;
@@ -101,28 +101,28 @@ main header #checkbox {
 main header .toggle-mode {
   width: 60px;
   height: fit-content;
-  background-color: #151515;
+  background-color: #040D12;
   border-radius: 64px;
 }
 main header .toggle-mode #circle {
   width: 20px;
   height: 20px;
-  background-color: #C73659;
+  background-color: #5C8374;
   border-radius: 100%;
-  border: 5px solid #151515;
+  border: 5px solid #040D12;
   transition: 0.4s;
   cursor: pointer;
 }
 main header #checkbox:checked + .toggle-mode #circle {
   transform: translateX(2rem);
-  background-color: #A91D3A;
+  background-color: #183D3D;
 }
 main nav {
   display: none;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  background-color: #C73659;
+  background-color: #5C8374;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -161,7 +161,7 @@ main nav ul a {
   width: 100%;
   text-align: left;
   text-decoration: none;
-  color: #151515;
+  color: #040D12;
 }
 main nav ul a:hover {
   cursor: pointer;
@@ -184,7 +184,7 @@ main .intro .text-intro h1 {
   line-height: 1.2;
 }
 main .intro .text-intro h1 b {
-  color: #C73659;
+  color: #5C8374;
 }
 main .intro .text-intro h4 {
   font-weight: 300;
@@ -192,14 +192,14 @@ main .intro .text-intro h4 {
 }
 main .intro .text-intro a {
   border: none;
-  background-color: #C73659;
-  color: #151515;
+  background-color: #5C8374;
+  color: #040D12;
   margin-top: 20px;
   padding: 12px;
   border-radius: 40px;
   font-weight: bold;
   font-size: 1rem;
-  border: 1px solid #C73659;
+  border: 1px solid #5C8374;
   text-decoration: none;
   display: block;
   width: fit-content;
@@ -207,8 +207,8 @@ main .intro .text-intro a {
 main .intro .text-intro a:hover {
   cursor: pointer;
   transition: 0.4s;
-  color: #C73659;
-  background-color: #151515;
+  color: #5C8374;
+  background-color: #040D12;
 }
 @media only screen and (max-width: 800px) {
   main .intro .text-intro a {
@@ -283,7 +283,7 @@ main .portfolio .gallery {
 main .portfolio .gallery .box-gallery {
   width: 350px;
   height: 200px;
-  background-color: #A91D3A;
+  background-color: #183D3D;
   background-size: cover;
   background-position: center;
   margin: 6px;
@@ -303,14 +303,14 @@ main .portfolio .github-btn {
 }
 main .portfolio .github-btn a {
   border: none;
-  background-color: #C73659;
-  color: #151515;
+  background-color: #5C8374;
+  color: #040D12;
   margin-top: 20px;
   padding: 12px;
   border-radius: 40px;
   font-weight: bold;
   font-size: 1rem;
-  border: 1px solid #C73659;
+  border: 1px solid #5C8374;
   text-decoration: none;
   display: block;
   width: fit-content;
@@ -319,8 +319,8 @@ main .portfolio .github-btn a {
 main .portfolio .github-btn a:hover {
   cursor: pointer;
   transition: 0.4s;
-  color: #C73659;
-  background-color: #151515;
+  color: #5C8374;
+  background-color: #040D12;
 }
 main .portfolio .container-modal {
   display: flex;
@@ -345,10 +345,10 @@ main .portfolio .container-modal #close-modal {
 main .portfolio .container-modal #close-modal:hover {
   cursor: pointer;
   transition: 0.4s;
-  color: #C73659;
+  color: #5C8374;
 }
 main .portfolio .container-modal .modal {
-  background-color: #151515;
+  background-color: #EEEEEE;
   padding: 20px;
   border-radius: 12px;
   width: 50%;
@@ -358,24 +358,24 @@ main .portfolio .container-modal .modal img {
   border-radius: 12px;
 }
 main .portfolio .container-modal .modal h3 {
-  color: #EEEEEE;
+  color: #040D12;
   margin-top: 12px;
 }
 main .portfolio .container-modal .modal p {
-  color: #EEEEEE;
+  color: #040D12;
   margin-top: 12px;
   font-weight: 300;
 }
 main .portfolio .container-modal .modal a {
   border: none;
-  background-color: #C73659;
-  color: #151515;
+  background-color: #5C8374;
+  color: #040D12;
   margin-top: 20px;
   padding: 12px;
   border-radius: 40px;
   font-weight: bold;
   font-size: 1rem;
-  border: 1px solid #C73659;
+  border: 1px solid #5C8374;
   text-decoration: none;
   display: block;
   width: fit-content;
@@ -383,8 +383,8 @@ main .portfolio .container-modal .modal a {
 main .portfolio .container-modal .modal a:hover {
   cursor: pointer;
   transition: 0.4s;
-  color: #C73659;
-  background-color: #151515;
+  color: #5C8374;
+  background-color: #040D12;
 }
 main .skills {
   display: flex;
@@ -407,7 +407,7 @@ main .skills .gallery-skills {
 main .skills .gallery-skills .box-skill {
   width: 120px;
   height: 120px;
-  background-color: #A91D3A;
+  background-color: #183D3D;
   margin: 6px;
   border-radius: 12px;
   display: flex;
@@ -419,15 +419,15 @@ main .skills .gallery-skills .box-skill:hover {
   cursor: pointer;
   transition: 0.4s;
   transform: scale(1.3);
-  background-color: #C73659;
+  background-color: #5C8374;
 }
 main .skills .gallery-skills .box-skill i {
   font-size: 2.5rem;
-  color: #151515;
+  color: #040D12;
 }
 main .skills .gallery-skills .box-skill span {
   margin-top: 3px;
-  color: #151515;
+  color: #040D12;
 }
 main .social-media {
   display: flex;
@@ -445,7 +445,7 @@ main .social-media .container-social-media {
   flex-direction: row;
   padding: 12px;
   border-radius: 60px;
-  background-color: #A91D3A;
+  background-color: #183D3D;
   margin-top: 12px;
 }
 main .social-media .container-social-media .links {
@@ -460,7 +460,7 @@ main .social-media .container-social-media .links {
 main .social-media .container-social-media .links:hover {
   cursor: pointer;
   transition: 0.4s;
-  color: #C73659;
+  color: #5C8374;
 }
 main .social-media .container-social-media .links i {
   font-size: 2rem;

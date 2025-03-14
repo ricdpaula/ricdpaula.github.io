@@ -1,11 +1,6 @@
-// $cor-principal: #222831;
-// $cor-secundaria: #31363f;
-// $cor-contraste: #76abae;
-// $cor-neutra: #e8e8e8;
-
-$cor-principal: #151515;
-$cor-secundaria: #A91D3A;
-$cor-contraste: #C73659;
+$cor-principal: #040D12;
+$cor-secundaria: #183D3D;
+$cor-contraste: #5C8374;
 $cor-neutra: #EEEEEE;
 $fonte-principal: "Poppins";
 
@@ -338,7 +333,7 @@ main {
       }
 
       .modal {
-        background-color: $cor-principal;
+        background-color: $cor-neutra;
         padding: 20px;
         border-radius: 12px;
         width: 50%;
@@ -349,12 +344,12 @@ main {
         }
 
         h3 {
-          color: $cor-neutra;
+          color: $cor-principal;
           margin-top: 12px;
         }
 
         p {
-          color: $cor-neutra;
+          color: $cor-principal;
           margin-top: 12px;
           font-weight: 300;
         }

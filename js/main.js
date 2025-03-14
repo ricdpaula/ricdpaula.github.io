@@ -77,6 +77,14 @@ projects = [
     url: "https://youtu.be/3ZMwSsZy4Zk",
     image: "../img/pj10.png",
   },
+  {
+    id: 10,
+    title: "StoreReact Loja Virtual feito em React",
+    description:
+      "Aplicação de loja simples feita em React, TailWindCSS, Node, Express e Axios.",
+    url: "https://storereact-frontend-ricdpaula.vercel.app/",
+    image: "../img/pj11.png",
+  },
 ];
 
 function portfolio(pj) {
@@ -154,7 +162,7 @@ function colorMode() {
       box.classList.add("box-lightmode");
     });
   } else {
-    document.body.style.backgroundColor = "#151515";
+    document.body.style.backgroundColor = "#040D12";
     let allH1 = document.querySelectorAll("h1");
     allH1.forEach((h1) => {
       h1.classList.remove("text-lightmode");
