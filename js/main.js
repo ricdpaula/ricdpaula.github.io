@@ -162,7 +162,7 @@ function colorMode() {
       box.classList.add("box-lightmode");
     });
   } else {
-    document.body.style.backgroundColor = "#040D12";
+    document.body.style.backgroundColor = "#0f0f0f";
     let allH1 = document.querySelectorAll("h1");
     allH1.forEach((h1) => {
       h1.classList.remove("text-lightmode");

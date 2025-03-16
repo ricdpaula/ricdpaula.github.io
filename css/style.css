@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #040D12;
+  background-color: #0f0f0f;
 }
 body h1 {
   font-size: 3rem;
@@ -18,14 +18,14 @@ body section {
 }
 body .btn {
   border: none;
-  background-color: #5C8374;
-  color: #040D12;
+  background-color: #4379F2;
+  color: #0f0f0f;
   margin-top: 20px;
   padding: 12px;
   border-radius: 40px;
   font-weight: bold;
   font-size: 1rem;
-  border: 1px solid #5C8374;
+  border: 1px solid #4379F2;
   text-decoration: none;
   display: block;
   width: fit-content;
@@ -33,39 +33,39 @@ body .btn {
 body .btn:hover {
   cursor: pointer;
   transition: 0.4s;
-  color: #5C8374;
-  background-color: #040D12;
+  color: #4379F2;
+  background-color: #0f0f0f;
 }
 body .text-lightmode {
-  color: #040D12 !important;
+  color: #0f0f0f !important;
 }
 body .bg-lightmode {
-  background-color: #EEEEEE !important;
+  background-color: #DBD8E3 !important;
 }
 body .bg-lightmode h3,
 body .bg-lightmode p {
-  color: #040D12 !important;
+  color: #0f0f0f !important;
 }
 body .bg-lightmode a {
-  color: #040D12 !important;
+  color: #0f0f0f !important;
 }
 body .bg-lightmode a:hover {
-  color: #5C8374 !important;
+  color: #4379F2 !important;
 }
 body .box-lightmode {
-  background-color: #EEEEEE !important;
+  background-color: #DBD8E3 !important;
 }
 body .box-lightmode:hover {
-  background-color: #5C8374 !important;
+  background-color: #4379F2 !important;
 }
 body .btn-lightmode {
-  background-color: #040D12 !important;
-  border: 1px solid #040D12 !important;
-  color: #EEEEEE !important;
+  background-color: #0f0f0f !important;
+  border: 1px solid #0f0f0f !important;
+  color: #DBD8E3 !important;
 }
 body .btn-lightmode:hover {
-  background-color: #EEEEEE !important;
-  color: #040D12 !important;
+  background-color: #DBD8E3 !important;
+  color: #0f0f0f !important;
 }
 
 main .top-page {
@@ -81,19 +81,19 @@ main header {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  background-color: #183D3D;
+  background-color: #1d1d1d;
   padding: 20px 30px 20px 30px;
 }
 main header img {
   height: 20px;
 }
 main header i {
-  color: #EEEEEE;
+  color: #DBD8E3;
 }
 main header i:hover {
   cursor: pointer;
   transition: 0.4s;
-  color: #5C8374;
+  color: #4379F2;
 }
 main header #checkbox {
   display: none;
@@ -101,28 +101,28 @@ main header #checkbox {
 main header .toggle-mode {
   width: 60px;
   height: fit-content;
-  background-color: #040D12;
+  background-color: #0f0f0f;
   border-radius: 64px;
 }
 main header .toggle-mode #circle {
   width: 20px;
   height: 20px;
-  background-color: #5C8374;
+  background-color: #4379F2;
   border-radius: 100%;
-  border: 5px solid #040D12;
+  border: 5px solid #0f0f0f;
   transition: 0.4s;
   cursor: pointer;
 }
 main header #checkbox:checked + .toggle-mode #circle {
   transform: translateX(2rem);
-  background-color: #183D3D;
+  background-color: #1d1d1d;
 }
 main nav {
   display: none;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  background-color: #5C8374;
+  background-color: #4379F2;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -161,7 +161,7 @@ main nav ul a {
   width: 100%;
   text-align: left;
   text-decoration: none;
-  color: #040D12;
+  color: #0f0f0f;
 }
 main nav ul a:hover {
   cursor: pointer;
@@ -179,27 +179,27 @@ main .intro .text-intro {
   position: relative;
 }
 main .intro .text-intro h1 {
-  color: #EEEEEE;
+  color: #DBD8E3;
   font-weight: 500;
   line-height: 1.2;
 }
 main .intro .text-intro h1 b {
-  color: #5C8374;
+  color: #4379F2;
 }
 main .intro .text-intro h4 {
   font-weight: 300;
-  color: #EEEEEE;
+  color: #DBD8E3;
 }
 main .intro .text-intro a {
   border: none;
-  background-color: #5C8374;
-  color: #040D12;
+  background-color: #4379F2;
+  color: #0f0f0f;
   margin-top: 20px;
   padding: 12px;
   border-radius: 40px;
   font-weight: bold;
   font-size: 1rem;
-  border: 1px solid #5C8374;
+  border: 1px solid #4379F2;
   text-decoration: none;
   display: block;
   width: fit-content;
@@ -207,8 +207,8 @@ main .intro .text-intro a {
 main .intro .text-intro a:hover {
   cursor: pointer;
   transition: 0.4s;
-  color: #5C8374;
-  background-color: #040D12;
+  color: #4379F2;
+  background-color: #0f0f0f;
 }
 @media only screen and (max-width: 800px) {
   main .intro .text-intro a {
@@ -249,10 +249,10 @@ main .about {
   text-align: center;
 }
 main .about h2 {
-  color: #EEEEEE;
+  color: #DBD8E3;
 }
 main .about p {
-  color: #EEEEEE;
+  color: #DBD8E3;
   font-weight: 300;
   width: 50%;
   margin-top: 12px;
@@ -269,7 +269,7 @@ main .portfolio {
   flex-direction: column;
 }
 main .portfolio h2 {
-  color: #EEEEEE;
+  color: #DBD8E3;
 }
 main .portfolio .gallery {
   display: flex;
@@ -283,7 +283,7 @@ main .portfolio .gallery {
 main .portfolio .gallery .box-gallery {
   width: 350px;
   height: 200px;
-  background-color: #183D3D;
+  background-color: #1d1d1d;
   background-size: cover;
   background-position: center;
   margin: 6px;
@@ -303,14 +303,14 @@ main .portfolio .github-btn {
 }
 main .portfolio .github-btn a {
   border: none;
-  background-color: #5C8374;
-  color: #040D12;
+  background-color: #4379F2;
+  color: #0f0f0f;
   margin-top: 20px;
   padding: 12px;
   border-radius: 40px;
   font-weight: bold;
   font-size: 1rem;
-  border: 1px solid #5C8374;
+  border: 1px solid #4379F2;
   text-decoration: none;
   display: block;
   width: fit-content;
@@ -319,8 +319,8 @@ main .portfolio .github-btn a {
 main .portfolio .github-btn a:hover {
   cursor: pointer;
   transition: 0.4s;
-  color: #5C8374;
-  background-color: #040D12;
+  color: #4379F2;
+  background-color: #0f0f0f;
 }
 main .portfolio .container-modal {
   display: flex;
@@ -337,7 +337,7 @@ main .portfolio .container-modal {
 }
 main .portfolio .container-modal #close-modal {
   font-size: 2rem;
-  color: #EEEEEE;
+  color: #DBD8E3;
   position: absolute;
   top: 50px;
   right: 50px;
@@ -345,10 +345,10 @@ main .portfolio .container-modal #close-modal {
 main .portfolio .container-modal #close-modal:hover {
   cursor: pointer;
   transition: 0.4s;
-  color: #5C8374;
+  color: #4379F2;
 }
 main .portfolio .container-modal .modal {
-  background-color: #EEEEEE;
+  background-color: #DBD8E3;
   padding: 20px;
   border-radius: 12px;
   width: 50%;
@@ -358,24 +358,24 @@ main .portfolio .container-modal .modal img {
   border-radius: 12px;
 }
 main .portfolio .container-modal .modal h3 {
-  color: #040D12;
+  color: #0f0f0f;
   margin-top: 12px;
 }
 main .portfolio .container-modal .modal p {
-  color: #040D12;
+  color: #0f0f0f;
   margin-top: 12px;
   font-weight: 300;
 }
 main .portfolio .container-modal .modal a {
   border: none;
-  background-color: #5C8374;
-  color: #040D12;
+  background-color: #4379F2;
+  color: #0f0f0f;
   margin-top: 20px;
   padding: 12px;
   border-radius: 40px;
   font-weight: bold;
   font-size: 1rem;
-  border: 1px solid #5C8374;
+  border: 1px solid #4379F2;
   text-decoration: none;
   display: block;
   width: fit-content;
@@ -383,8 +383,8 @@ main .portfolio .container-modal .modal a {
 main .portfolio .container-modal .modal a:hover {
   cursor: pointer;
   transition: 0.4s;
-  color: #5C8374;
-  background-color: #040D12;
+  color: #4379F2;
+  background-color: #0f0f0f;
 }
 main .skills {
   display: flex;
@@ -393,7 +393,7 @@ main .skills {
   flex-direction: column;
 }
 main .skills h2 {
-  color: #EEEEEE;
+  color: #DBD8E3;
 }
 main .skills .gallery-skills {
   display: flex;
@@ -407,7 +407,7 @@ main .skills .gallery-skills {
 main .skills .gallery-skills .box-skill {
   width: 120px;
   height: 120px;
-  background-color: #183D3D;
+  background-color: #1d1d1d;
   margin: 6px;
   border-radius: 12px;
   display: flex;
@@ -419,15 +419,15 @@ main .skills .gallery-skills .box-skill:hover {
   cursor: pointer;
   transition: 0.4s;
   transform: scale(1.3);
-  background-color: #5C8374;
+  background-color: #4379F2;
 }
 main .skills .gallery-skills .box-skill i {
   font-size: 2.5rem;
-  color: #040D12;
+  color: #0f0f0f;
 }
 main .skills .gallery-skills .box-skill span {
   margin-top: 3px;
-  color: #040D12;
+  color: #0f0f0f;
 }
 main .social-media {
   display: flex;
@@ -436,7 +436,7 @@ main .social-media {
   flex-direction: column;
 }
 main .social-media h2 {
-  color: #EEEEEE;
+  color: #DBD8E3;
 }
 main .social-media .container-social-media {
   display: flex;
@@ -445,7 +445,7 @@ main .social-media .container-social-media {
   flex-direction: row;
   padding: 12px;
   border-radius: 60px;
-  background-color: #183D3D;
+  background-color: #1d1d1d;
   margin-top: 12px;
 }
 main .social-media .container-social-media .links {
@@ -454,13 +454,13 @@ main .social-media .container-social-media .links {
   align-items: center;
   flex-direction: column;
   text-decoration: none;
-  color: #EEEEEE;
+  color: #DBD8E3;
   margin: 0px 25px;
 }
 main .social-media .container-social-media .links:hover {
   cursor: pointer;
   transition: 0.4s;
-  color: #5C8374;
+  color: #4379F2;
 }
 main .social-media .container-social-media .links i {
   font-size: 2rem;
@@ -482,7 +482,7 @@ main .credits {
   flex-direction: column;
 }
 main .credits small {
-  color: #EEEEEE;
+  color: #DBD8E3;
   text-align: center;
 }
 
