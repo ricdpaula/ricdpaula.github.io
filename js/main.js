@@ -85,6 +85,14 @@ projects = [
     url: "https://storereact-frontend-ricdpaula.vercel.app/",
     image: "../img/pj11.png",
   },
+  {
+    id: 11,
+    title: "Landing Page Legend Design",
+    description:
+      "Site feito em HTML, CSS, Javascript e Jquery para a minha agência digital focada em design.",
+    url: "https://legenddesign.netlify.app/",
+    image: "../img/pj12.png",
+  },
 ];
 
 function portfolio(pj) {
