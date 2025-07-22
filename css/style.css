@@ -81,7 +81,7 @@ main header {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  background-color: #0f0f0f;
+  background-color: #1d1d1d;
   padding: 20px 30px 20px 30px;
 }
 main header img {
@@ -115,7 +115,7 @@ main header .toggle-mode #circle {
 }
 main header #checkbox:checked + .toggle-mode #circle {
   transform: translateX(2rem);
-  background-color: #0f0f0f;
+  background-color: #1d1d1d;
 }
 main nav {
   display: none;
@@ -227,7 +227,7 @@ main .intro .avatar {
   background-image: url("../img/ricardo.jpg");
   background-size: cover;
   background-position: 0px -30px;
-  border-radius: 100%;
+  border-radius: 24px;
   animation: expand 0.8s ease-in forwards;
 }
 @media only screen and (max-width: 800px) {
@@ -283,7 +283,7 @@ main .portfolio .gallery {
 main .portfolio .gallery .box-gallery {
   width: 350px;
   height: 200px;
-  background-color: #0f0f0f;
+  background-color: #1d1d1d;
   background-size: cover;
   background-position: center;
   margin: 6px;
@@ -406,7 +406,7 @@ main .skills .gallery-skills {
 main .skills .gallery-skills .box-skill {
   width: 120px;
   height: 120px;
-  background-color: #0f0f0f;
+  background-color: #1d1d1d;
   margin: 6px;
   border-radius: 12px;
   display: flex;
@@ -444,7 +444,7 @@ main .social-media .container-social-media {
   flex-direction: row;
   padding: 12px;
   border-radius: 60px;
-  background-color: #0f0f0f;
+  background-color: #1d1d1d;
   margin-top: 12px;
 }
 main .social-media .container-social-media .links {
