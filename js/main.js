@@ -93,6 +93,14 @@ projects = [
     url: "https://legenddesign.netlify.app/",
     image: "../img/pj12.png",
   },
+  {
+    id: 12,
+    title: "Landing Page BikeSpace",
+    description:
+      "Site feito para uma loja de venda de e-bikes no Brasil. Utilizei HTML, CSS e Javascript",
+    url: "https://bikespace-legenddesign.netlify.app/",
+    image: "../img/pj13.png",
+  },
 ];
 
 function portfolio(pj) {
