@@ -298,6 +298,7 @@ main .portfolio {
 }
 main .portfolio h2 {
   color: #fff;
+  text-align: center;
 }
 main .portfolio .gallery {
   display: flex;
