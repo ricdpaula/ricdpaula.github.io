@@ -1,6 +1,6 @@
-$cor-principal: #000;
-$cor-secundaria: #1d1d1d;
-$cor-contraste: #4379F2;
+$cor-principal: #4D2D8C;
+$cor-secundaria: #1e0030;
+$cor-contraste: #ffe600;
 $cor-neutra: #fff;
 $fonte-principal: "Poppins";
 
@@ -10,10 +10,11 @@ $fonte-principal: "Poppins";
   align-items: $align;
   flex-direction: $direction;
 }
+
 @mixin button() {
   border: none;
-  background-color: $cor-contraste;
-  color: $cor-principal;
+  background-color: transparent;
+  color: $cor-contraste;
   margin-top: 20px;
   padding: 12px;
   border-radius: 40px;
@@ -27,8 +28,8 @@ $fonte-principal: "Poppins";
   &:hover {
     cursor: pointer;
     transition: 0.4s;
-    color: $cor-contraste;
-    background-color: $cor-principal;
+    color: $cor-secundaria;
+    background-color: $cor-contraste;
   }
 }
 
@@ -38,7 +39,8 @@ $fonte-principal: "Poppins";
 }
 
 body {
-  background-color: $cor-principal;
+  background: radial-gradient(circle, rgba(30, 0, 48, 1) 0%, rgba(0, 0, 0, 1) 100%);
+
 
   h1 {
     font-size: 3rem;
@@ -57,39 +59,12 @@ body {
     @include button();
   }
 
-  .text-lightmode {
-    color: $cor-principal !important;
-  }
-  .bg-lightmode {
-    background-color: $cor-neutra !important;
-
-    h3,
-    p {
-      color: $cor-principal !important;
-    }
-
-    a {
-      color: $cor-principal !important;
-
-      &:hover {
-        color: $cor-contraste !important;
-      }
-    }
-  }
-  .box-lightmode {
-    background-color: $cor-neutra !important;
+  .link {
+    color: $cor-neutra;
 
     &:hover {
-      background-color: $cor-contraste !important;
-    }
-  }
-  .btn-lightmode {
-    background-color: $cor-principal !important;
-    border: 1px solid $cor-principal !important;
-    color: $cor-neutra !important;
-    &:hover {
-      background-color: $cor-neutra !important;
-      color: $cor-principal !important;
+      color: $cor-contraste;
+      transition: .4s;
     }
   }
 }
@@ -97,16 +72,27 @@ body {
 main {
   .top-page {
     position: fixed;
-    bottom: 30px;
+    bottom: 90px;
     right: 30px;
 
     a {
       text-decoration: none;
     }
   }
+
+  .nav-icon {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    i {
+      text-decoration: none;
+    }
+  }
+
   header {
     @include flex(space-between, center, row);
-    background-color: $cor-secundaria;
+    background-color: transparent;
     padding: 20px 30px 20px 30px;
 
     img {
@@ -122,9 +108,11 @@ main {
         color: $cor-contraste;
       }
     }
+
     #checkbox {
       display: none;
     }
+
     .toggle-mode {
       width: 60px;
       height: fit-content;
@@ -142,11 +130,12 @@ main {
       }
     }
 
-    #checkbox:checked + .toggle-mode #circle {
+    #checkbox:checked+.toggle-mode #circle {
       transform: translateX(2rem);
       background-color: $cor-secundaria;
     }
   }
+
   nav {
     display: none;
     justify-content: center;
@@ -188,7 +177,7 @@ main {
         width: 100%;
         text-align: left;
         text-decoration: none;
-        color: $cor-principal;
+        color: $cor-secundaria;
 
         &:hover {
           cursor: pointer;
@@ -198,25 +187,45 @@ main {
       }
     }
   }
+
   .intro {
     @include flex(space-evenly, center, row);
 
     .text-intro {
-      animation: slideRight 0.8s ease-in forwards;
       position: relative;
+
       h1 {
         color: $cor-neutra;
         font-weight: 500;
         line-height: 1.2;
+        width: 500px;
+        line-height: 58px;
 
-        b {
-          color: $cor-contraste;
+        .name {
+          animation: textIntro 1s linear forwards;
+        }
+
+        @media only screen and (max-width: 800px) {
+          width: 100%;
         }
       }
-      h4 {
+
+      .typing {
+        font-size: 4rem;
+        font-weight: 100;
+        animation: flashing .8s linear infinite;
+      }
+
+      h3 {
         font-weight: 300;
         color: $cor-neutra;
+        animation: slideRight 1s linear forwards;
+        animation-delay: 5s;
+        opacity: 0;
+        margin-top: 6px;
+        position: relative;
       }
+
       a {
         @include button();
 
@@ -231,18 +240,44 @@ main {
       }
     }
 
-    .avatar {
-      height: 300px;
-      width: 300px;
-      background-image: url("../img/ricardo.jpg");
-      background-size: cover;
-      background-position: 0px -30px;
-      border-radius: 24px;
-      animation: expand 0.8s ease-in forwards;
+    .avatar-border::after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      border: 2px solid $cor-contraste;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      border-radius: 100%;
+      animation: spin 3s linear infinite;
+    }
+
+    .avatar-border {
+      position: relative;
+      height: 320px;
+      width: 320px;
+      @include flex(center, center, column);
 
       @media only screen and (max-width: 800px) {
-        height: 200px;
-        width: 200px;
+        height: 250px;
+        width: 250px;
+      }
+
+      .avatar {
+        height: 300px;
+        width: 300px;
+        background-image: url("../img/ricardo.jpg");
+        background-size: cover;
+        background-position: 0px -30px;
+        border-radius: 100%;
+        animation: expand 0.8s ease-in forwards;
+
+        @media only screen and (max-width: 800px) {
+          height: 200px;
+          width: 200px;
+        }
       }
     }
 
@@ -250,6 +285,7 @@ main {
       flex-direction: column-reverse;
     }
   }
+
   .about {
     @include flex(center, center, column);
     text-align: center;
@@ -257,6 +293,7 @@ main {
     h2 {
       color: $cor-neutra;
     }
+
     p {
       color: $cor-neutra;
       font-weight: 300;
@@ -268,6 +305,7 @@ main {
       }
     }
   }
+
   .portfolio {
     @include flex(center, center, column);
 
@@ -293,7 +331,7 @@ main {
         &:hover {
           cursor: pointer;
           transition: 0.4s;
-          transform: scale(1.3);
+          transform: scale(1.1);
         }
       }
     }
@@ -307,58 +345,8 @@ main {
         text-decoration: none;
       }
     }
-
-    .container-modal {
-      @include flex(center, center, column);
-      background-color: rgba(0, 0, 0, 0.8);
-      position: fixed;
-      top: 0px;
-      left: 0px;
-      height: 100vh;
-      width: 100%;
-      display: none;
-
-      #close-modal {
-        font-size: 2rem;
-        color: $cor-neutra;
-        position: absolute;
-        top: 50px;
-        right: 50px;
-
-        &:hover {
-          cursor: pointer;
-          transition: 0.4s;
-          color: $cor-contraste;
-        }
-      }
-
-      .modal {
-        background-color: $cor-neutra;
-        padding: 20px;
-        border-radius: 12px;
-        width: 50%;
-
-        img {
-          width: 100%;
-          border-radius: 12px;
-        }
-
-        h3 {
-          color: $cor-principal;
-          margin-top: 12px;
-        }
-
-        p {
-          color: $cor-principal;
-          margin-top: 12px;
-        }
-
-        a {
-          @include button();
-        }
-      }
-    }
   }
+
   .skills {
     @include flex(center, center, column);
 
@@ -375,7 +363,7 @@ main {
       .box-skill {
         width: 120px;
         height: 120px;
-        background-color: $cor-secundaria;
+        background-color: $cor-principal;
         margin: 6px;
         border-radius: 12px;
         @include flex(center, center, column-reverse);
@@ -389,16 +377,17 @@ main {
 
         i {
           font-size: 2.5rem;
-          color: $cor-principal;
+          color: $cor-secundaria;
         }
 
         span {
           margin-top: 3px;
-          color: $cor-principal;
+          color: $cor-secundaria;
         }
       }
     }
   }
+
   .social-media {
     @include flex(center, center, column);
 
@@ -410,13 +399,13 @@ main {
       @include flex(center, center, row);
       padding: 12px;
       border-radius: 60px;
-      background-color: $cor-secundaria;
+      background-color: $cor-principal;
       margin-top: 12px;
 
       .links {
         @include flex(center, center, column);
         text-decoration: none;
-        color: $cor-neutra;
+        color: $cor-secundaria;
         margin: 0px 25px;
 
         &:hover {
@@ -443,17 +432,23 @@ main {
   .credits {
     @include flex(center, center, column);
 
+    img {
+      height: 20px;
+    }
+
     small {
       color: $cor-neutra;
       text-align: center;
+      margin-top: 18px;
     }
   }
 }
 
 @keyframes expand {
   0% {
-    transform: scale(0);
+    transform: scale(0.8);
   }
+
   100% {
     transform: scale(1);
   }
@@ -463,7 +458,49 @@ main {
   0% {
     right: 200px;
   }
+
   100% {
+    opacity: 1;
     right: 0px;
+  }
+}
+
+@keyframes textIntro {
+  0% {
+    color: #fff;
+    opacity: 0;
+  }
+
+  50%{
+    opacity: 0;
+  }
+
+  100% {
+    color: $cor-contraste;
+    opacity: 1;
+  }
+}
+
+@keyframes flashing {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
   }
 }

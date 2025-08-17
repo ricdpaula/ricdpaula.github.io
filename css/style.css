@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #000;
+  background: radial-gradient(circle, rgb(30, 0, 48) 0%, rgb(0, 0, 0) 100%);
 }
 body h1 {
   font-size: 3rem;
@@ -18,14 +18,14 @@ body section {
 }
 body .btn {
   border: none;
-  background-color: #4379F2;
-  color: #000;
+  background-color: transparent;
+  color: #ffe600;
   margin-top: 20px;
   padding: 12px;
   border-radius: 40px;
   font-weight: bold;
   font-size: 1rem;
-  border: 1px solid #4379F2;
+  border: 1px solid #ffe600;
   text-decoration: none;
   display: block;
   width: fit-content;
@@ -33,47 +33,31 @@ body .btn {
 body .btn:hover {
   cursor: pointer;
   transition: 0.4s;
-  color: #4379F2;
-  background-color: #000;
+  color: #1e0030;
+  background-color: #ffe600;
 }
-body .text-lightmode {
-  color: #000 !important;
+body .link {
+  color: #fff;
 }
-body .bg-lightmode {
-  background-color: #fff !important;
-}
-body .bg-lightmode h3,
-body .bg-lightmode p {
-  color: #000 !important;
-}
-body .bg-lightmode a {
-  color: #000 !important;
-}
-body .bg-lightmode a:hover {
-  color: #4379F2 !important;
-}
-body .box-lightmode {
-  background-color: #fff !important;
-}
-body .box-lightmode:hover {
-  background-color: #4379F2 !important;
-}
-body .btn-lightmode {
-  background-color: #000 !important;
-  border: 1px solid #000 !important;
-  color: #fff !important;
-}
-body .btn-lightmode:hover {
-  background-color: #fff !important;
-  color: #000 !important;
+body .link:hover {
+  color: #ffe600;
+  transition: 0.4s;
 }
 
 main .top-page {
   position: fixed;
-  bottom: 30px;
+  bottom: 90px;
   right: 30px;
 }
 main .top-page a {
+  text-decoration: none;
+}
+main .nav-icon {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+main .nav-icon i {
   text-decoration: none;
 }
 main header {
@@ -81,7 +65,7 @@ main header {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  background-color: #1d1d1d;
+  background-color: transparent;
   padding: 20px 30px 20px 30px;
 }
 main header img {
@@ -93,7 +77,7 @@ main header i {
 main header i:hover {
   cursor: pointer;
   transition: 0.4s;
-  color: #4379F2;
+  color: #ffe600;
 }
 main header #checkbox {
   display: none;
@@ -101,28 +85,28 @@ main header #checkbox {
 main header .toggle-mode {
   width: 60px;
   height: fit-content;
-  background-color: #000;
+  background-color: #4D2D8C;
   border-radius: 64px;
 }
 main header .toggle-mode #circle {
   width: 20px;
   height: 20px;
-  background-color: #4379F2;
+  background-color: #ffe600;
   border-radius: 100%;
-  border: 5px solid #000;
+  border: 5px solid #4D2D8C;
   transition: 0.4s;
   cursor: pointer;
 }
 main header #checkbox:checked + .toggle-mode #circle {
   transform: translateX(2rem);
-  background-color: #1d1d1d;
+  background-color: #1e0030;
 }
 main nav {
   display: none;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  background-color: #4379F2;
+  background-color: #ffe600;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -161,7 +145,7 @@ main nav ul a {
   width: 100%;
   text-align: left;
   text-decoration: none;
-  color: #000;
+  color: #1e0030;
 }
 main nav ul a:hover {
   cursor: pointer;
@@ -175,31 +159,47 @@ main .intro {
   flex-direction: row;
 }
 main .intro .text-intro {
-  animation: slideRight 0.8s ease-in forwards;
   position: relative;
 }
 main .intro .text-intro h1 {
   color: #fff;
   font-weight: 500;
   line-height: 1.2;
+  width: 500px;
+  line-height: 58px;
 }
-main .intro .text-intro h1 b {
-  color: #4379F2;
+main .intro .text-intro h1 .name {
+  animation: textIntro 1s linear forwards;
 }
-main .intro .text-intro h4 {
+@media only screen and (max-width: 800px) {
+  main .intro .text-intro h1 {
+    width: 100%;
+  }
+}
+main .intro .text-intro .typing {
+  font-size: 4rem;
+  font-weight: 100;
+  animation: flashing 0.8s linear infinite;
+}
+main .intro .text-intro h3 {
   font-weight: 300;
   color: #fff;
+  animation: slideRight 1s linear forwards;
+  animation-delay: 5s;
+  opacity: 0;
+  margin-top: 6px;
+  position: relative;
 }
 main .intro .text-intro a {
   border: none;
-  background-color: #4379F2;
-  color: #000;
+  background-color: transparent;
+  color: #ffe600;
   margin-top: 20px;
   padding: 12px;
   border-radius: 40px;
   font-weight: bold;
   font-size: 1rem;
-  border: 1px solid #4379F2;
+  border: 1px solid #ffe600;
   text-decoration: none;
   display: block;
   width: fit-content;
@@ -207,8 +207,8 @@ main .intro .text-intro a {
 main .intro .text-intro a:hover {
   cursor: pointer;
   transition: 0.4s;
-  color: #4379F2;
-  background-color: #000;
+  color: #1e0030;
+  background-color: #ffe600;
 }
 @media only screen and (max-width: 800px) {
   main .intro .text-intro a {
@@ -221,17 +221,45 @@ main .intro .text-intro a:hover {
     margin-top: 12px;
   }
 }
-main .intro .avatar {
+main .intro .avatar-border::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 2px solid #ffe600;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 100%;
+  animation: spin 3s linear infinite;
+}
+main .intro .avatar-border {
+  position: relative;
+  height: 320px;
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (max-width: 800px) {
+  main .intro .avatar-border {
+    height: 250px;
+    width: 250px;
+  }
+}
+main .intro .avatar-border .avatar {
   height: 300px;
   width: 300px;
   background-image: url("../img/ricardo.jpg");
   background-size: cover;
   background-position: 0px -30px;
-  border-radius: 24px;
+  border-radius: 100%;
   animation: expand 0.8s ease-in forwards;
 }
 @media only screen and (max-width: 800px) {
-  main .intro .avatar {
+  main .intro .avatar-border .avatar {
     height: 200px;
     width: 200px;
   }
@@ -283,7 +311,7 @@ main .portfolio .gallery {
 main .portfolio .gallery .box-gallery {
   width: 350px;
   height: 200px;
-  background-color: #1d1d1d;
+  background-color: #1e0030;
   background-size: cover;
   background-position: center;
   margin: 6px;
@@ -292,7 +320,7 @@ main .portfolio .gallery .box-gallery {
 main .portfolio .gallery .box-gallery:hover {
   cursor: pointer;
   transition: 0.4s;
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 main .portfolio .github-btn {
   display: flex;
@@ -303,14 +331,14 @@ main .portfolio .github-btn {
 }
 main .portfolio .github-btn a {
   border: none;
-  background-color: #4379F2;
-  color: #000;
+  background-color: transparent;
+  color: #ffe600;
   margin-top: 20px;
   padding: 12px;
   border-radius: 40px;
   font-weight: bold;
   font-size: 1rem;
-  border: 1px solid #4379F2;
+  border: 1px solid #ffe600;
   text-decoration: none;
   display: block;
   width: fit-content;
@@ -319,71 +347,8 @@ main .portfolio .github-btn a {
 main .portfolio .github-btn a:hover {
   cursor: pointer;
   transition: 0.4s;
-  color: #4379F2;
-  background-color: #000;
-}
-main .portfolio .container-modal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.8);
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  height: 100vh;
-  width: 100%;
-  display: none;
-}
-main .portfolio .container-modal #close-modal {
-  font-size: 2rem;
-  color: #fff;
-  position: absolute;
-  top: 50px;
-  right: 50px;
-}
-main .portfolio .container-modal #close-modal:hover {
-  cursor: pointer;
-  transition: 0.4s;
-  color: #4379F2;
-}
-main .portfolio .container-modal .modal {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  width: 50%;
-}
-main .portfolio .container-modal .modal img {
-  width: 100%;
-  border-radius: 12px;
-}
-main .portfolio .container-modal .modal h3 {
-  color: #000;
-  margin-top: 12px;
-}
-main .portfolio .container-modal .modal p {
-  color: #000;
-  margin-top: 12px;
-}
-main .portfolio .container-modal .modal a {
-  border: none;
-  background-color: #4379F2;
-  color: #000;
-  margin-top: 20px;
-  padding: 12px;
-  border-radius: 40px;
-  font-weight: bold;
-  font-size: 1rem;
-  border: 1px solid #4379F2;
-  text-decoration: none;
-  display: block;
-  width: fit-content;
-}
-main .portfolio .container-modal .modal a:hover {
-  cursor: pointer;
-  transition: 0.4s;
-  color: #4379F2;
-  background-color: #000;
+  color: #1e0030;
+  background-color: #ffe600;
 }
 main .skills {
   display: flex;
@@ -406,7 +371,7 @@ main .skills .gallery-skills {
 main .skills .gallery-skills .box-skill {
   width: 120px;
   height: 120px;
-  background-color: #1d1d1d;
+  background-color: #4D2D8C;
   margin: 6px;
   border-radius: 12px;
   display: flex;
@@ -418,15 +383,15 @@ main .skills .gallery-skills .box-skill:hover {
   cursor: pointer;
   transition: 0.4s;
   transform: scale(1.3);
-  background-color: #4379F2;
+  background-color: #ffe600;
 }
 main .skills .gallery-skills .box-skill i {
   font-size: 2.5rem;
-  color: #000;
+  color: #1e0030;
 }
 main .skills .gallery-skills .box-skill span {
   margin-top: 3px;
-  color: #000;
+  color: #1e0030;
 }
 main .social-media {
   display: flex;
@@ -444,7 +409,7 @@ main .social-media .container-social-media {
   flex-direction: row;
   padding: 12px;
   border-radius: 60px;
-  background-color: #1d1d1d;
+  background-color: #4D2D8C;
   margin-top: 12px;
 }
 main .social-media .container-social-media .links {
@@ -453,13 +418,13 @@ main .social-media .container-social-media .links {
   align-items: center;
   flex-direction: column;
   text-decoration: none;
-  color: #fff;
+  color: #1e0030;
   margin: 0px 25px;
 }
 main .social-media .container-social-media .links:hover {
   cursor: pointer;
   transition: 0.4s;
-  color: #4379F2;
+  color: #ffe600;
 }
 main .social-media .container-social-media .links i {
   font-size: 2rem;
@@ -480,14 +445,18 @@ main .credits {
   align-items: center;
   flex-direction: column;
 }
+main .credits img {
+  height: 20px;
+}
 main .credits small {
   color: #fff;
   text-align: center;
+  margin-top: 18px;
 }
 
 @keyframes expand {
   0% {
-    transform: scale(0);
+    transform: scale(0.8);
   }
   100% {
     transform: scale(1);
@@ -498,7 +467,40 @@ main .credits small {
     right: 200px;
   }
   100% {
+    opacity: 1;
     right: 0px;
+  }
+}
+@keyframes textIntro {
+  0% {
+    color: #fff;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    color: #ffe600;
+    opacity: 1;
+  }
+}
+@keyframes flashing {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 

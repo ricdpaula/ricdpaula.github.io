@@ -1,223 +1,129 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#222831">
-    <title>Portfólio FrontEnd - Ricardo de Paula Silva</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  </head>
-  <body>
-    <main>
-      <div class="top-page">
-        <a href="#anchor0" class="scrollLink btn">
-          <i class="fa-solid fa-arrow-up"></i>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#222831">
+  <title>Portfólio FrontEnd - Ricardo de Paula Silva</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body>
+  <main>
+    <div class="top-page">
+      <a href="#anchor0" class="scrollLink btn">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+    <div class="nav-icon">
+      <i class="fa-regular fa-compass navigate btn"></i>
+    </div>
+    <header id="anchor0">
+      <img src="img/logo-white.png" alt="Logo RPFront" />
+      <a class="link" href="https://wa.me/5511943303227" target="_blank">Entre em contato</a>
+    </header>
+    <nav class="nav">
+      <div id="close-menu">
+        <i class="fa-solid fa-arrow-left"></i>
+        <small>Fechar</small>
+      </div>
+      <ul>
+        <a href="#anchor1" class="scrollLink">Início</a>
+        <a href="#anchor2" class="scrollLink">Sobre</a>
+        <a href="#anchor3" class="scrollLink">Portfólio</a>
+        <a href="#anchor4" class="scrollLink">Habildades</a>
+        <a href="#anchor5" class="scrollLink">Mais</a>
+      </ul>
+    </nav>
+    <section class="intro" id="anchor1">
+      <div class="text-intro">
+        <h1 id="intro-tag"></b></h1>
+        <h3>Designer Gráfico e Web Designer</h3>
+      </div>
+      <div class="avatar-border">
+        <div class="avatar"></div>
+      </div>
+    </section>
+    <section class="about" id="anchor2">
+      <h2>Sobre mim</h2>
+      <p>
+        Formação técnica em comunicação visual (ETEC) e superior em Design Gráfico (UNICSUL). Tenho entendimento dos
+        princípios de: desenhos vetoriais, animações, web design, e tenho habilidade em transformar ideias em peças
+        visuais. Hoje, estou realizando minha segunda graduação na área de TI.
+      </p>
+    </section>
+    <section class="portfolio" id="anchor3">
+      <h2>Alguns dos meus trabalhos</h2>
+      <div class="gallery"></div>
+      <div class="github-btn">
+        <a target="_blank" href="https://github.com/ricdpaula" class="btn">Mais projetos no GitHub <i
+            class="fa-brands fa-github"></i></a>
+      </div>
+    </section>
+    <section class="skills" id="anchor4">
+      <h2>Habilidades</h2>
+      <div class="gallery-skills">
+        <div class="box-skill">
+          <span>HTML</span><i class="fa-brands fa-html5"></i>
+        </div>
+        <div class="box-skill">
+          <span>CSS</span><i class="fa-brands fa-css3-alt"></i>
+        </div>
+        <div class="box-skill">
+          <span>Sass</span><i class="fa-brands fa-sass"></i>
+        </div>
+        <div class="box-skill">
+          <span>Javascript</span><i class="fa-brands fa-js"></i>
+        </div>
+        <div class="box-skill">
+          <span>PHP</span><i class="fa-brands fa-php"></i>
+        </div>
+        <div class="box-skill">
+          <span>React</span><i class="fa-brands fa-react"></i>
+        </div>
+        <div class="box-skill">
+          <span>Mysql</span><i class="fa-solid fa-database"></i>
+        </div>
+      </div>
+    </section>
+    <section class="social-media" id="anchor5">
+      <h2>Outros portfólios</h2>
+      <div class="container-social-media">
+        <a class="links" target="_blank" href="http://behance.net/ricdpaula">
+          <i class="fa-brands fa-behance"></i>
+          <span>Behance</span>
+        </a>
+        <a class="links" target="_blank" href="http://github.com/ricdpaula">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a class="links" target="_blank" href="https://www.linkedin.com/in/ricdpaula">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>Linkedin</span>
+        </a>
+        <a class="links" target="_blank" href="https://500px.com/p/ricdpaula">
+          <i class="fa-brands fa-500px"></i>
+          <span>500px</span>
         </a>
       </div>
-      <header id="anchor0">
-        <i class="fa-regular fa-compass navigate"></i>
-        <img src="img/logo-white.png" alt="Logo RPFront" />
-        <input
-          type="checkbox"
-          name="checkbox"
-          id="checkbox"
-          onchange="colorMode()"
-        />
-        <label for="checkbox" class="toggle-mode">
-          <div id="circle"></div>
-        </label>
-      </header>
-      <nav class="nav">
-        <div id="close-menu">
-          <i class="fa-solid fa-arrow-left"></i>
-          <small>Fechar</small>
-        </div>
-        <ul>
-          <a href="#anchor1" class="scrollLink">Início</a>
-          <a href="#anchor2" class="scrollLink">Sobre</a>
-          <a href="#anchor3" class="scrollLink">Portfólio</a>
-          <a href="#anchor4" class="scrollLink">Habildades</a>
-          <a href="#anchor5" class="scrollLink">Social</a>
-        </ul>
-      </nav>
-      <section class="intro" id="anchor1">
-        <div class="text-intro">
-          <h1>Olá, eu sou o <br /><b>Ricardo de Paula</b></h1>
-          <h4>Designer Gráfico e Web Designer</h4>
-          <a class="btn" href="curriculo-ricardo-de-paula-dg.pdf" download>Baixar CV</a>
-        </div>
-        <div class="avatar"></div>
-      </section>
-      <section class="about" id="anchor2">
-        <h2>Sobre mim</h2>
-        <p>
-          Formação técnica em comunicação visual (ETEC) e superior em Design
-          Gráfico (UNICSUL). Tenho entendimento dos princípios de: desenhos
-          vetoriais, animações, web design, e tenho habilidade em transformar
-          ideias em peças visuais. Meu principal hobby é estudar programação
-          mais focada no front-end, mas também tenho leves conhecimentos na
-          parte back-end.
-        </p>
-      </section>
-      <section class="portfolio" id="anchor3">
-        <h2>Portfólio</h2>
-        <div class="gallery">
-          <div
-            class="box-gallery"
-            onclick="portfolio(this)"
-            data-id="0"
-            style="background-image: url(img/pj1.png)"
-          ></div>
-          <div
-            class="box-gallery"
-            onclick="portfolio(this)"
-            data-id="1"
-            style="background-image: url(img/pj2.png)"
-          ></div>
-          <div
-            class="box-gallery"
-            onclick="portfolio(this)"
-            data-id="2"
-            style="background-image: url(img/pj3.png)"
-          ></div>
-          <div
-            class="box-gallery"
-            onclick="portfolio(this)"
-            data-id="3"
-            style="background-image: url(img/pj4.png)"
-          ></div>
-          <div
-            class="box-gallery"
-            onclick="portfolio(this)"
-            data-id="4"
-            style="background-image: url(img/pj5.png)"
-          ></div>
-          <div
-            class="box-gallery"
-            onclick="portfolio(this)"
-            data-id="5"
-            style="background-image: url(img/pj6.png)"
-          ></div>
-          <div
-            class="box-gallery"
-            onclick="portfolio(this)"
-            data-id="6"
-            style="background-image: url(img/pj7.png)"
-          ></div>
-          <div
-            class="box-gallery"
-            onclick="portfolio(this)"
-            data-id="7"
-            style="background-image: url(img/pj8.png)"
-          ></div>
-          <div
-            class="box-gallery"
-            onclick="portfolio(this)"
-            data-id="8"
-            style="background-image: url(img/pj9.png)"
-          ></div>
-          <div
-            class="box-gallery"
-            onclick="portfolio(this)"
-            data-id="9"
-            style="background-image: url(img/pj10.png)"
-          ></div>
-          <div
-            class="box-gallery"
-            onclick="portfolio(this)"
-            data-id="10"
-            style="background-image: url(img/pj11.png)"
-          ></div>
-          <div
-            class="box-gallery"
-            onclick="portfolio(this)"
-            data-id="11"
-            style="background-image: url(img/pj12.png)"
-          ></div>
-          <div
-            class="box-gallery"
-            onclick="portfolio(this)"
-            data-id="12"
-            style="background-image: url(img/pj13.png)"
-          ></div>
-        </div>
-        <div class="github-btn">
-          <a target="_blank" href="https://github.com/ricdpaula" class="btn"
-            >Mais projetos no GitHub <i class="fa-brands fa-github"></i
-          ></a>
-        </div>
-        <div class="container-modal">
-          <i class="fa-solid fa-xmark" id="close-modal"></i>
-          <div class="modal"></div>
-        </div>
-      </section>
-      <section class="skills" id="anchor4">
-        <h2>Habilidades</h2>
-        <div class="gallery-skills">
-          <div class="box-skill">
-            <span>HTML</span><i class="fa-brands fa-html5"></i>
-          </div>
-          <div class="box-skill">
-            <span>CSS</span><i class="fa-brands fa-css3-alt"></i>
-          </div>
-          <div class="box-skill">
-            <span>Sass</span><i class="fa-brands fa-sass"></i>
-          </div>
-          <div class="box-skill">
-            <span>Javascript</span><i class="fa-brands fa-js"></i>
-          </div>
-          <div class="box-skill">
-            <span>PHP</span><i class="fa-brands fa-php"></i>
-          </div>
-          <div class="box-skill">
-            <span>React</span><i class="fa-brands fa-react"></i>
-          </div>
-          <div class="box-skill">
-            <span>Mysql</span><i class="fa-solid fa-database"></i>
-          </div>
-        </div>
-      </section>
-      <section class="social-media" id="anchor5">
-        <h2>Outros portfólios</h2>
-        <div class="container-social-media">
-          <a class="links" target="_blank" href="http://behance.net/ricdpaula">
-            <i class="fa-brands fa-behance"></i>
-            <span>Behance</span>
-          </a>
-          <a class="links" target="_blank" href="http://github.com/ricdpaula">
-            <i class="fa-brands fa-github"></i>
-            <span>GitHub</span>
-          </a>
-          <a
-            class="links"
-            target="_blank"
-            href="https://www.linkedin.com/in/ricdpaula"
-          >
-            <i class="fa-brands fa-linkedin"></i>
-            <span>Linkedin</span>
-          </a>
-          <a class="links" target="_blank" href="https://500px.com/p/ricdpaula">
-            <i class="fa-brands fa-500px"></i>
-            <span>500px</span>
-          </a>
-        </div>
-      </section>
-      <section class="credits">
-        <small>Desenvolvido por Ricardo de Paula Silva - 2024</small>
-      </section>
-    </main>
-    <script src="js/main.js"></script>
-  </body>
+    </section>
+    <section class="credits">
+      <img src="img/logo-white.png" alt="Logo RPFront" />
+      <small>Desenvolvido por Ricardo de Paula Silva - 2024</small>
+    </section>
+  </main>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+
 </html>
