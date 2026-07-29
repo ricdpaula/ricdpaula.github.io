@@ -20,7 +20,7 @@ $(".scrollLink").click(function () {
 });
 
 var introTag = document.querySelector('#intro-tag');
-var introText = "Olá, eu me chamo Ricardo de Paula."
+var introText = "Olá, eu me chamo Ricardo de Paula"
 var splitIntroText = introText.split("")
 var count = 0
 
@@ -31,7 +31,7 @@ pipe.classList.add('typing')
 
 function stopInterval() {
   if (count >= splitIntroText.length) {
-    introTag.innerHTML = "Olá, eu me chamo <span class='name'>Ricardo de Paula.</span><span class='typing'>|</span>"
+    introTag.innerHTML = "Olá, eu me chamo <span class='name'>Ricardo de Paula</span><span class='typing'>|</span>"
     clearInterval(showLetters);
   }
 }

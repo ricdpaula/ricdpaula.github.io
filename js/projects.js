@@ -101,6 +101,14 @@ projects = [
         url: "https://bikespace-legenddesign.netlify.app/",
         image: "../img/pj13.png",
     },
+    {
+        id: 14,
+        title: "Yu-Gi-Oh Card Info",
+        description:
+            "Página que consome a API pública do ygoprodeck usando Python",
+        url: "https://yugioh-card-info.onrender.com/",
+        image: "../img/pj14.png",
+    },
 ];
 
 const gallery = document.querySelector('.gallery')
