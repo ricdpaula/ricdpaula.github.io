@@ -339,13 +339,17 @@ main {
         background-position: center;
         margin: 6px;
         border-radius: 12px;
-        filter: brightness(20%);
 
         &:hover {
           cursor: pointer;
           transition: 0.4s;
-          filter: brightness(100%);
+          transform: scale(1.1);
+          box-shadow: 12px 12px 12px rgba(0,0,0,0.5);
         }
+      }
+
+      @media only screen and (max-width: 800px) {
+        width: 90%;
       }
     }
 
@@ -402,14 +406,14 @@ main {
       @include flex(center, center, row);
       flex-wrap: wrap;
       margin-top: 12px;
-      width: 60%;
+      width: 90%;
 
       .box-skill {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
         background-color: $cor-principal;
         margin: 6px;
-        border-radius: 12px;
+        border-radius: 6px;
         @include flex(center, center, column-reverse);
 
         &:hover {
@@ -443,19 +447,20 @@ main {
       @include flex(center, center, row);
       padding: 12px;
       border-radius: 60px;
-      background-color: $cor-principal;
+      border: 1px solid $cor-contraste;
+      background-color: transparent;
       margin-top: 12px;
 
       .links {
         @include flex(center, center, column);
         text-decoration: none;
-        color: $cor-secundaria;
+        color: $cor-contraste;
         margin: 0px 25px;
 
         &:hover {
           cursor: pointer;
           transition: 0.4s;
-          color: $cor-contraste;
+          color: $cor-neutra;
         }
 
         i {

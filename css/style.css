@@ -328,12 +328,17 @@ main .portfolio .gallery .box-gallery {
   background-position: center;
   margin: 6px;
   border-radius: 12px;
-  filter: brightness(20%);
 }
 main .portfolio .gallery .box-gallery:hover {
   cursor: pointer;
   transition: 0.4s;
-  filter: brightness(100%);
+  transform: scale(1.1);
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.5);
+}
+@media only screen and (max-width: 800px) {
+  main .portfolio .gallery {
+    width: 90%;
+  }
 }
 main .portfolio .github-btn {
   display: flex;
@@ -411,14 +416,14 @@ main .skills .gallery-skills {
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 12px;
-  width: 60%;
+  width: 90%;
 }
 main .skills .gallery-skills .box-skill {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   background-color: #4D2D8C;
   margin: 6px;
-  border-radius: 12px;
+  border-radius: 6px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -454,7 +459,8 @@ main .social-media .container-social-media {
   flex-direction: row;
   padding: 12px;
   border-radius: 60px;
-  background-color: #4D2D8C;
+  border: 1px solid #ffe600;
+  background-color: transparent;
   margin-top: 12px;
 }
 main .social-media .container-social-media .links {
@@ -463,13 +469,13 @@ main .social-media .container-social-media .links {
   align-items: center;
   flex-direction: column;
   text-decoration: none;
-  color: #1e0030;
+  color: #ffe600;
   margin: 0px 25px;
 }
 main .social-media .container-social-media .links:hover {
   cursor: pointer;
   transition: 0.4s;
-  color: #ffe600;
+  color: #fff;
 }
 main .social-media .container-social-media .links i {
   font-size: 2rem;
